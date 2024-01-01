@@ -946,20 +946,5 @@ echo "</td>";
 echo "<td>";
 echo "HARGA BELI";
 echo "</td>";
-echo "<td>";
-echo "HARGA JUAL";
-echo "</td>";
-echo "</tr>";
-//
-echo "<tr>";
-echo "<td>";
-echo "BTC";
-echo "</td>";
-echo "<td>";
-echo $sell_price_btc;
-echo "</td>";
-echo "<td>";
-echo $buy_price_btc;
-echo "</td>";
 echo "</tr>";
 ?>
