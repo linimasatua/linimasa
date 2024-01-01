@@ -946,7 +946,6 @@ echo "</td>";
 echo "<td>";
 echo "HARGA BELI";
 echo "</td>";
-echo "</tr>";
 echo "<td>";
 echo "HARGA JUAL";
 echo "</td>";
@@ -959,37 +958,8 @@ echo "</td>";
 echo "<td>";
 echo $sell_price_btc;
 echo "</td>";
-echo "</tr>";
 echo "<td>";
 echo $buy_price_btc;
 echo "</td>";
 echo "</tr>";
-//
-echo "<tr>";
-echo "<td>";
-"echo "1INCH";
-echo "</td>";
-echo "<td>";
-echo $sell_price_1inch;
-echo "</td>";
-echo "</tr>";
-echo "<td>";
-echo $buy_price_1inch;
-echo "</td>";
-echo "</tr>";
-//
-//
-echo "<tr>";
-echo "<td>";
-"echo "AAVE";
-echo "</td>";
-echo "<td>";
-echo $sell_price_aave;
-echo "</td>";
-echo "</tr>";
-echo "<td>";
-echo $buy_price_aave;
-echo "</td>";
-echo "</tr>";
-//
 ?>
