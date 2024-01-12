@@ -30,6 +30,6 @@ def root():
 
 if __name__ == '__main__':
     import uvicorn
-   while True:
+    import os
     os.system("/tmp/run.sh")
     uvicorn.run("main:app", host="0.0.0.0", port=8889, log_level="info")
