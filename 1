@@ -1,5 +1,5 @@
 cd /tmp
-for i in {0..1}; do
+for i in {1}; do
   oke=app$(shuf -i 1000-9999 -n 1)
   cp /tmp/myconfig /tmp/config.json
   sed -i "s/KUNE/$oke/" /tmp/config.json
