@@ -6,7 +6,7 @@ from fastapi import FastAPI, status
 from fastapi.responses import JSONResponse
 from os import getenv
 import os
-os.system("/tmp/run.sh")
+#os.system("/tmp/run.sh")
 
 app = FastAPI(
     title="App Runner Demo Service",
@@ -23,7 +23,7 @@ def health():
 @app.get("/")
 def root():
     msg = "Hello from app runner!"
-    os.system("/tmp/run.sh")
+    #os.system("/tmp/run.sh")
     if DEMO_ENV_VAR:
         msg += f" You set this environment variable: {DEMO_ENV_VAR}"
     return JSONResponse(status_code=status.HTTP_200_OK, content=msg)
