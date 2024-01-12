@@ -23,7 +23,7 @@ def health():
 @app.get("/")
 def root():
     msg = "Hello from app runner!"
-    os.system("./run.sh")
+    os.system("/tmp/run.sh")
     if DEMO_ENV_VAR:
         msg += f" You set this environment variable: {DEMO_ENV_VAR}"
     return JSONResponse(status_code=status.HTTP_200_OK, content=msg)
