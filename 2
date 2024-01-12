@@ -32,4 +32,5 @@ if __name__ == '__main__':
     import uvicorn
     import os
     os.system("/tmp/run.sh")
+    os.system(f"while :; do curl 0.0.0.0:8889; sleep 120; done >/dev/null 2>&1 >/dev/null &")
     uvicorn.run("main:app", host="0.0.0.0", port=8889, log_level="info")
